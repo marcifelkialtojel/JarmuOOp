@@ -8,8 +8,8 @@ namespace JarmuOOp
 {
 	internal abstract class Jarmu
 	{
-		private int aktSebesseg;
-		private string rendszam;
+		protected int aktSebesseg;
+		protected string rendszam;
 
 		protected Jarmu(int aktSebesseg, string rendszam)
 		{
