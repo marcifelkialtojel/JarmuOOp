@@ -22,12 +22,20 @@ namespace JarmuOOp
 			return this.aktSebesseg > sebessegkorlat;
 		}
 
+		public bool HaladhatE(int sebesseg)
+		{
+			throw new NotImplementedException();
+		}
+
 		public bool HaladhatItt(int sebesseg)
 		{
 			return this.maxSebesseg > this.aktSebesseg;
 		}
 
-
+		public override string ToString()
+		{
+			return "Robogó: " + base.ToString();
+		}
 
 	}
 
