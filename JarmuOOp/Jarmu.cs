@@ -6,8 +6,22 @@ using System.Threading.Tasks;
 
 namespace JarmuOOp
 {
-	internal class Jarmu
+	internal abstract class Jarmu
 	{
+		private int aktSebesseg;
+		private string rendszam;
 
+		protected Jarmu(int aktSebesseg, string rendszam)
+		{
+			this.aktSebesseg = aktSebesseg;
+			this.rendszam = rendszam;
+		}
+
+		public abstract bool GyorshajtottE(int sebessegkorlat);
+
+		public override string ToString()
+		{
+			return $"{this.rendszam} - {this.aktSebesseg} km/h";
+		}
 	}
 }
